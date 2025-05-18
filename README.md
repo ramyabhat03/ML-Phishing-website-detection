@@ -24,6 +24,7 @@ pip install -r requirements.txt
 Run the Streamlit App
 --
 streamlit run app.py
+--
 Open your browser and enter any URL to check if it is phishing or legitimate.
 
 Train the Model (Optional)
