@@ -53,9 +53,9 @@ if st.button("Check URL"):
         features = np.array(extract_features(url_input)).reshape(1, -1)
         prediction = model.predict(features)[0]
         if prediction.lower() == 'phishing':
-            st.error(" The URL is predicted to be **Phishing**.")
+            st.error(" The URL is **Phishing**.")
         else:
-            st.success(" The URL is predicted to be **Legitimate**.")
+            st.success(" The URL is **Legitimate**.")
 
         # Optionally show extracted features
         with st.expander("Show extracted features"):
